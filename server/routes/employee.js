@@ -3,7 +3,7 @@ var MongoClient = require('mongodb').MongoClient,
     db;
 
 var mongoClient = new MongoClient(new Server('localhost', 27017));
-mongoClient.open(function(err, mongoClient) {
+mongoClient.open(function(err, mc) {
     db = mongoClient.db("angular-directory-db");
     db.collection('employees', {strict:true}, function(err, collection) {
         if (err) {

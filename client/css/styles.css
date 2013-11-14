@@ -70,6 +70,7 @@ a {
 
 .list {
     list-style-type: none;
+    overflow: hidden;
 }
 
 .list > li {
